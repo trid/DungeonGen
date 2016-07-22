@@ -7,7 +7,7 @@ file(GLOB SOURCE_FILES *.cpp)
 
 add_definitions(-DSFML_STATIC)
 
-add_executable(DunGen ${SOURCE_FILES} Tile.cpp Tile.h RandomRoomGenerator.cpp RandomRoomGenerator.h)
+add_executable(DunGen ${SOURCE_FILES})
 target_link_libraries(DunGen sfml-graphics)
 target_link_libraries(DunGen sfml-window)
 target_link_libraries(DunGen sfml-system)
